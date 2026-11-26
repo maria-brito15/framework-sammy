@@ -1,0 +1,21 @@
+{
+  "versao": 1,
+  "observacao": "Aliases de modelo são configurados pelo usuário em politica-de-modelos.yaml; este catálogo descreve capacidades e não fixa IDs de modelo.",
+  "modelos": [
+    {
+      "alias": "haiku",
+      "uso": "tarefas curtas, exploração delimitada e classificação simples",
+      "restricao": "não usar para decisões de alto impacto"
+    },
+    {
+      "alias": "sonnet",
+      "uso": "análise e implementação comuns",
+      "restricao": "escalar se a tarefa exceder capacidade após contexto e esforço adequados"
+    },
+    {
+      "alias": "opus",
+      "uso": "raciocínio complexo, arquitetura, auditoria crítica e riscos elevados",
+      "restricao": "reservar para tarefas cujo benefício justifique o custo"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "versao": 1,
+  "idioma": "pt-BR",
+  "agente_principal": "sammy",
+  "comando_ativacao": "hora-de-trabalhar",
+  "modo_autonomia": "controlada",
+  "triagem": {
+    "habilitada": true,
+    "dimensoes": [
+      "porte",
+      "rigor",
+      "autonomia",
+      "granularidade"
+    ],
+    "pontuacao_risco": {
+      "minimo": 0,
+      "maximo": 14,
+      "leve_maximo": 4,
+      "padrao_maximo": 9
+    },
+    "desconhecido_nao_equivale_a_zero": true,
+    "condicoes_criticas_elevam_rigor": true,
+    "reavaliacao_por_eventos": true,
+    "reduzir_rigor_exige_evidencia": true
+  },
+  "execucao": {
+    "max_agentes_simultaneos": 4,
+    "max_ciclos_autocorrecao": 2,
+    "manifesto": "planejamento/controle/execucao.json",
+    "triagem": "planejamento/controle/triagem.json",
+    "estrategia": "planejamento/controle/estrategia-de-execucao.json"
+  },
+  "aprovacoes": {
+    "diagnostico": "humana",
+    "planejamento": "humana",
+    "backlog": "humana",
+    "requisitos_funcionalidade": "humana",
+    "desenho_funcionalidade": "humana",
+    "tarefas_funcionalidade": "humana"
+  },
+  "github": {
+    "habilitado": false,
+    "modo_simulacao_por_padrao": true,
+    "publicar_automaticamente": false
+  },
+  "modelos": {
+    "politica": "configuracao/politica-de-modelos.yaml",
+    "catalogo": "configuracao/catalogo-de-modelos.json",
+    "estrategia_roteamento": "por_chamada_de_subagente",
+    "modelo_da_sessao_principal": "controlado_pela_sessao",
+    "permitir_troca_automatica_da_sessao": false
+  }
+}

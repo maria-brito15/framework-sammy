@@ -1,0 +1,28 @@
+# Segredos e configurações pessoais
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+.claude/settings.local.json
+
+# Ambientes Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Artefatos locais e temporários
+.DS_Store
+Thumbs.db
+*.log
+.tmp/
+.cache/
+
+# Manifestos gerados e resultados locais (descomente se não quiser versioná-los)
+# planejamento/controle/manifesto-fontes.json
+# planejamento/controle/execucao.json
+# avaliacoes/resultados/*.json

@@ -1,0 +1,23 @@
+{
+  "tipo_trabalho": "funcionalidade_nova",
+  "porte_projeto": "medio",
+  "autonomia": "controlada",
+  "granularidade": "funcionalidade",
+  "dimensoes": {
+    "complexidade_dominio": 1,
+    "dados_seguranca": 1,
+    "integracoes": 1,
+    "incerteza": 0,
+    "complexidade_tecnica": 1,
+    "escala_organizacional": 0,
+    "impacto_falha": 1
+  },
+  "condicoes_criticas": [],
+  "evidencias_suficientes": true,
+  "evidencias": [
+    "Exemplo sintético para exercitar o script"
+  ],
+  "observacoes": [
+    "Substituir por análise contextual real do Sammy."
+  ]
+}

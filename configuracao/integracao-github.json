@@ -1,0 +1,11 @@
+{
+  "habilitada": false,
+  "modo": "simulacao",
+  "repositorio": null,
+  "projeto": null,
+  "criar_labels": false,
+  "criar_issues": false,
+  "alterar_campos_project": false,
+  "exige_autorizacao_explicita": true,
+  "preservar_campos_manualmente_gerenciados": true
+}

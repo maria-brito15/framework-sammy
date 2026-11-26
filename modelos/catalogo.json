@@ -1,0 +1,228 @@
+{
+  "versao": 1,
+  "templates": [
+    {
+      "id": "diagnostico",
+      "arquivo": "modelos/planejamento/diagnostico.md",
+      "artefato": "diagnostico",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "projeto_novo",
+        "mudanca_com_fontes"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "arquitetura",
+      "arquivo": "modelos/planejamento/arquitetura.md",
+      "artefato": "arquitetura",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "impacto_arquitetural"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "equipes",
+      "arquivo": "modelos/planejamento/equipes.md",
+      "artefato": "equipes",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "multiplas_frentes",
+        "projeto_medio_ou_grande"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "fases",
+      "arquivo": "modelos/planejamento/fases.md",
+      "artefato": "fases",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "projeto_medio_ou_grande",
+        "dependencias_entre_entregas"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "historias",
+      "arquivo": "modelos/backlog/historias-de-usuario.md",
+      "artefato": "historias",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "backlog_de_produto"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "epicos",
+      "arquivo": "modelos/backlog/epicos.md",
+      "artefato": "epicos",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "capacidades_relacionadas"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "funcionalidades",
+      "arquivo": "modelos/backlog/funcionalidades.md",
+      "artefato": "funcionalidades",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "entregas_planejaveis_por_funcionalidade"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "requisitos-funcionalidade",
+      "arquivo": "modelos/especificacoes/requisitos.md",
+      "artefato": "requisitos_funcionalidade",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "funcionalidade_aprovada_para_especificar"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "desenho-tecnico",
+      "arquivo": "modelos/especificacoes/desenho-tecnico.md",
+      "artefato": "desenho_tecnico",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "impacto_tecnico"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "tarefas",
+      "arquivo": "modelos/especificacoes/tarefas.md",
+      "artefato": "tarefas",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "implementacao_planejada"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "revisao",
+      "arquivo": "modelos/especificacoes/revisao.md",
+      "artefato": "revisao",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "entrega_implementada"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "sessao-refinamento",
+      "arquivo": "modelos/backlog/sessao-de-refinamento.md",
+      "artefato": "refinamento",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "backlog_em_evolucao"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "dor",
+      "arquivo": "modelos/backlog/definicao-de-pronto.md",
+      "artefato": "definicao_de_pronto",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "planejamento_iterativo"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "dod",
+      "arquivo": "modelos/backlog/definicao-de-concluido.md",
+      "artefato": "definicao_de_concluido",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "entrega_de_software"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "sprint",
+      "arquivo": "modelos/backlog/planejamento-de-sprint.md",
+      "artefato": "sprint",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "equipe_e_cadencia_confirmadas"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "pesquisa-tecnica",
+      "arquivo": "modelos/engenharia/pesquisa-tecnica.md",
+      "artefato": "pesquisa",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "incerteza_tecnica_bloqueadora"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "defeito",
+      "arquivo": "modelos/engenharia/defeito.md",
+      "artefato": "defeito",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "correcao_de_defeito"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "mudanca-de-escopo",
+      "arquivo": "modelos/engenharia/mudanca-de-escopo.md",
+      "artefato": "mudanca",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "alteracao_de_escopo_aprovado"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "debito-tecnico",
+      "arquivo": "modelos/engenharia/debito-tecnico.md",
+      "artefato": "debito_tecnico",
+      "rigor_minimo": "leve",
+      "aplicavel_quando": [
+        "divida_tecnica_identificada"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    },
+    {
+      "id": "historico-aprovacoes",
+      "arquivo": "modelos/controle/historico-de-aprovacoes.md",
+      "artefato": "historico_aprovacoes",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "gates_humanos"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "excecao-gate",
+      "arquivo": "modelos/controle/excecao-de-gate.md",
+      "artefato": "excecao_gate",
+      "rigor_minimo": "rigoroso",
+      "aplicavel_quando": [
+        "excecao_autorizada"
+      ],
+      "obrigatorio_quando_aplicavel": true
+    },
+    {
+      "id": "revisao-consolidada",
+      "arquivo": "modelos/controle/revisao-consolidada.md",
+      "artefato": "revisao_consolidada",
+      "rigor_minimo": "padrao",
+      "aplicavel_quando": [
+        "pacote_de_aprovacao"
+      ],
+      "obrigatorio_quando_aplicavel": false
+    }
+  ]
+}

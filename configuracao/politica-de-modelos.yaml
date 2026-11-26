@@ -1,0 +1,82 @@
+versao: 1
+# Modos: economico | equilibrado | qualidade-prioritaria
+modo: equilibrado
+
+# Aliases são resolvidos pelo Claude Code/provedor. Verifique disponibilidade da conta.
+modelos_permitidos:
+  - haiku
+  - sonnet
+  - opus
+
+modelo_sammy:
+  estrategia: modelo-da-sessao
+  permitir-troca-automatica: false
+
+padroes:
+  tarefa_deterministica:
+    executor: script
+  tarefa_curta:
+    modelo: haiku
+    esforco: low
+  tarefa_comum:
+    modelo: sonnet
+    esforco: medium
+  tarefa_complexa:
+    modelo: opus
+    esforco: high
+
+roteamento_por_papel:
+  analista-de-repositorio:
+    modelo: haiku
+    esforco: low
+  analista-de-requisitos:
+    modelo: sonnet
+    esforco: medium
+  analista-de-dados:
+    modelo: sonnet
+    esforco: medium
+  analista-de-produto:
+    modelo: sonnet
+    esforco: medium
+  especialista-em-backlog:
+    modelo: sonnet
+    esforco: medium
+  planejador-de-entregas:
+    modelo: sonnet
+    esforco: medium
+  arquiteto-de-software:
+    modelo: opus
+    esforco: high
+  auditor-de-planejamento:
+    modelo: sonnet
+    esforco: high
+  consolidador-de-especificacoes:
+    modelo: sonnet
+    esforco: medium
+  implementador:
+    modelo: sonnet
+    esforco: medium
+  revisor:
+    modelo: sonnet
+    esforco: high
+  publicador-do-github:
+    executor: script
+
+limites:
+  agentes_simultaneos: 4
+  turnos_padrao: 24
+  turnos_complexos: 40
+  ciclos_promocao_modelo: 1
+
+escalonamento:
+  tentativas_antes_de_promover: 2
+  corrigir_contexto_antes_de_promover: true
+  alterar_modelo_e_esforco_ao_mesmo_tempo: false
+  registrar_motivo: true
+
+contexto:
+  carregar_documentos_completos_apenas_quando_necessario: true
+  preferir_trechos_com_evidencia: true
+  usar_scripts_para_validacao_deterministica: true
+  limitar_retorno_dos_subagentes: true
+  impedir_delegacao_em_cascata_por_padrao: true

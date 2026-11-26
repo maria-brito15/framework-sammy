@@ -1,0 +1,13 @@
+{
+  "versao_manifesto": 1,
+  "execucao_atual": null,
+  "modo": "controlada",
+  "fontes": [],
+  "artefatos": [],
+  "etapas": [],
+  "aprovacoes": [],
+  "integracao_github": {
+    "estado": "desabilitada",
+    "operacoes_pendentes": []
+  }
+}

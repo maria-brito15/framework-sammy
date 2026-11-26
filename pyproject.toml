@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "framework-sammy"
+version = "0.1.0"
+description = "Framework de orquestração SDD no Claude Code"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["PyYAML>=6.0", "jsonschema>=4.20"]
+
+[tool.setuptools]
+packages = []

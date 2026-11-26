@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triagem do Sammy",
+  "type": "object",
+  "required": [
+    "tipo_trabalho",
+    "porte_projeto",
+    "autonomia",
+    "granularidade",
+    "dimensoes"
+  ],
+  "properties": {
+    "tipo_trabalho": {
+      "type": "string"
+    },
+    "porte_projeto": {
+      "enum": [
+        "pequeno",
+        "medio",
+        "grande",
+        "desconhecido"
+      ]
+    },
+    "rigor_projeto": {
+      "enum": [
+        "leve",
+        "padrao",
+        "rigoroso"
+      ]
+    },
+    "autonomia": {
+      "enum": [
+        "somente_rascunhos",
+        "controlada",
+        "ampliada"
+      ]
+    },
+    "granularidade": {
+      "enum": [
+        "projeto",
+        "dominio_epico",
+        "funcionalidade",
+        "historia_tarefa"
+      ]
+    },
+    "dimensoes": {
+      "type": "object",
+      "required": [
+        "complexidade_dominio",
+        "dados_seguranca",
+        "integracoes",
+        "incerteza",
+        "complexidade_tecnica",
+        "escala_organizacional",
+        "impacto_falha"
+      ],
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 2
+          },
+          {
+            "const": "DESCONHECIDO"
+          }
+        ]
+      }
+    }
+  }
+}
